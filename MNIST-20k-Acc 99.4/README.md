@@ -10,8 +10,7 @@
 - With the Train and Test modules implemented, loss and accuracy are calculated accordingly.
 
 ## Training with multiple arguments
-- Number of epochs is fixed to 18
-- Below are the training method with the best training values achieved.
+Number of epochs for training is fixed to 18. Below are the training methods with the best training results achieved.
 - Training is done with Multi step scheduler and Adam optimizer
   <pre>Test set: Average loss: 0.0215, Accuracy: 9940/10000 (99%)</pre>
 - Training is done with 1 step scheduler and Adam optimizer

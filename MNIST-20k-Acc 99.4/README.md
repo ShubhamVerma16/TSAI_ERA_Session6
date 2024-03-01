@@ -20,3 +20,11 @@
   <pre>Test set: Average loss: 0.0236, Accuracy: 9921/10000 (99%)</pre>
 - Training is done with 2 step scheduler and SGD optimizer
   <pre>Test set: Average loss: 0.0228, Accuracy: 9931/10000 (99%)</pre>
+
+
+## Experiments
+- The below are the experiments that were done to get the desidered results:
+- Input and output channels to maitain the number of parameters withing the range specified.
+- The augmentations that could be applied on the training data.
+- The learning rate and the scheduler. Step scheduler helps change the learning rate as the number of steps go higher and adjust the LR accordingly.
+- Scheduler helps achieve global minima with the change in steps and come out of local minima if at all the model gets stuck in.

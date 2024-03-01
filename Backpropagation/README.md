@@ -45,21 +45,28 @@ In orde to update the weights, we need to find the rate of change of E_Total w.r
   <pre>∂E_Total/∂w5 = ∂E1/∂w5 = (∂E1/∂a_o1) * (∂a_o1/∂o1) * (∂o1/∂w5)</pre>
 ## Calulation for forward pass and backward pass (∂E_Total/∂Wi) can be seen in the below image
 ![image](https://github.com/ShubhamVerma16/TSAI_ERA_Session6/assets/46774613/a30b3f3b-b8f8-41a8-8128-eae7761ae7ea)
-Please refer S6_NN_BackPropagation.xlsx, for all the formulas included. All the above formula are key-ed in, so that we can check with different values. The file includes back-propagation updates for ~70 steps. 
+Please refer S6_NN_BackPropagation.xlsx, for all the formulas included. All the above formula are key-ed in, so that we can check with different values. The file includes back-propagation updates for 68 steps. 
 THe below images represent the loss curves for various learning rates:
 ### Learning rate = 0.1
+![image](https://github.com/ShubhamVerma16/TSAI_ERA_Session6/assets/46774613/69c5660d-6d6a-4dbd-9641-8cb7924ed023)
 
 ### Learning rate = 0.2
+![image](https://github.com/ShubhamVerma16/TSAI_ERA_Session6/assets/46774613/a25dddce-59b7-4387-8e36-3500cf56cc86)
 
 ### Learning rate = 0.5
+![image](https://github.com/ShubhamVerma16/TSAI_ERA_Session6/assets/46774613/04f320c7-6030-4212-a57b-ec31be93ce06)
 
 ### Learning rate = 0.8
+![image](https://github.com/ShubhamVerma16/TSAI_ERA_Session6/assets/46774613/88074bb7-65e4-4594-bf62-98ec8d43a6c1)
 
 ### Learning rate = 1.0
+![image](https://github.com/ShubhamVerma16/TSAI_ERA_Session6/assets/46774613/42f09a07-4e39-4233-8e5b-3624c7f9d84d)
 
 ### Learning rate = 2.0
+![image](https://github.com/ShubhamVerma16/TSAI_ERA_Session6/assets/46774613/3af82b74-a5dd-40b7-9e15-56de1acdcc7c)
 
-
+As observed from the loss curves with changing learning rates, it shows how higher learning rate can help reach minima faster with longer strides.
+#### NOTE: Higher learning rates and cause the model to get stuck on local minim. Hence, choosing the correct value of learning rates is important.
 
 
 
